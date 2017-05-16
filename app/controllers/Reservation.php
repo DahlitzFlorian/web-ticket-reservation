@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *	
  *	@author Florian Dahlitz
  */
-class Reservation extends CI_Controller 
+class Reservation extends MY_Controller 
 {
 
 	public function index()
