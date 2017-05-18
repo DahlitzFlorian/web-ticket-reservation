@@ -27,6 +27,7 @@
 		echo form_button([
 			'name' => 'private_date',
 			'content' => 'Privater Termin',
+			'onClick' => 'location.href=\'' . base_url('reservation/private') . '\''
 		]);
 
 		echo form_submit('reservation_submit', 'Reservieren');

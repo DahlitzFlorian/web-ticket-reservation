@@ -21,7 +21,8 @@ class Reservation extends MY_Controller
 
 	public function index()
 	{
-		$this->data['tour_dates'] = [1,2];
+		$this->load->model('Tour_model', 'tour');
+		$this->data['tour_dates'] = $this->tour->get_active_tour_dates();
 
 		$this->load->view('reservation', $this->data);
 	}
